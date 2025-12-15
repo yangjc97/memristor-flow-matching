@@ -105,7 +105,7 @@ python plot_result.py
 
 If you wish to retrain the models from scratch, follow this order:
 
-#### 1\. Train the Autoencoder (NeRF/CNF)
+#### 1\. Train the Encoder and CNF Decoder
 
 First, train the external Encoder and Conditional Neural Field Decoder.
 
