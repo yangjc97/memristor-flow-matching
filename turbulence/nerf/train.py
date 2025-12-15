@@ -1,3 +1,16 @@
+"""
+This module is developed based on the work:
+"Conditional neural field latent diffusion model for generating spatiotemporal turbulence"
+(Nature Communications 15, 10416, 2024).
+
+Original Repository: https://github.com/jx-wang-s-group/CoNFiLD
+Original Authors: P. Du, M. H. Parikh, X. Fan, X.-Y. Liu, J.-X. Wang
+
+Acknowledgement:
+We extend our special thanks to the original authors for their generous sharing.
+If you intend to use this specific module, please prioritize referring to the original version of the code and the corresponding literature.
+"""
+
 from os.path import exists
 from os import mkdir
 import sys

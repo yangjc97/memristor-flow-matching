@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 -----
 
-## 🧪 Task 1: Toy Demo (2D Generation)
+## Task 1: Toy Demo (2D Generation)
 
 This is a lightweight demonstration of the Flow Matching framework. It trains a model to generate a **2D quarter-arc shaped distribution** from Gaussian noise.
 
@@ -49,17 +49,16 @@ This is a lightweight demonstration of the Flow Matching framework. It trains a 
 
 -----
 
-## 🌊 Task 2: Spatiotemporal Turbulence Generation
+## Task 2: Spatiotemporal Turbulence Generation
 
 This task generates spatiotemporal turbulence fields. The architecture consists of three main components:
 
 1.  **Field Data:** Turbulence data storage.
 2.  **NeRF (Encoder/Decoder):** Handles the encoding of field data and the **Conditional Neural Field (CNF)** decoding.
-    * [cite_start]**Acknowledgement:** This module is developed based on the work: *Conditional neural field latent diffusion model for generating spatiotemporal turbulence* (Nature Communications 15, 10416, 2024) [cite: 1150] and its official repository [CoNFiLD](https://github.com/jx-wang-s-group/CoNFiLD).
-    * Special thanks to the original authors (P. Du, M. H. Parikh, X. Fan, X.-Y. Liu, J.-X. Wang) for their generous sharing. If you need to use this specific module, please refer to the original version of the code and literature.
+    * **Acknowledgement:** This module is developed based on the work: *Conditional neural field latent diffusion model for generating spatiotemporal turbulence* (Nature Communications 15, 10416, 2024) and its official repository [CoNFiLD](https://github.com/jx-wang-s-group/CoNFiLD). Special thanks to the original authors for their generous sharing. If you need to use this specific module, please refer to the original version of the code and literature.
 3.  **Flow-Matching:** The Latent Flow Matching model that generates latent features.
 
-### 🚀 Inference
+### Inference
 
 To generate turbulence fields using the pre-trained models, follow these three steps:
 
@@ -100,9 +99,9 @@ python plot_result.py
 ```
 
   * **Outputs:**
-      * `results/field_comparison.png`: A comprehensive comparison image showing the Baseline, Uncompensated Hardware (noisy), and Compensated Hardware (high-precision) results.
+      * `results/field_comparison.png`: A comparison image showing the Baseline, Uncompensated Hardware (noisy), and Compensated Hardware (high-precision) results.
 
-### 🏋️ Training
+### Training
 
 If you wish to retrain the models from scratch, follow this order:
 
@@ -140,10 +139,8 @@ If you find this code or paper useful for your research, please cite:
 ```bibtex
 @article{yang2025highprecision,
   title={High-precision in-memory flow matching using resistive memory},
-  author={Yang, Jichang and Xu, Meng and Chen, Hegan and Lin, Ning and others},
+  author={Yang, Jichang and Xu, Meng and Chen, Hegan and others},
   journal={arXiv preprint},
   year={2025}
 }
 ```
-
-*(Note: Please update the citation details if the paper is published in a specific proceeding)*
