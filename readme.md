@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 -----
 
-## Task 1: Toy Demo (2D Generation)
+## 🧪 Task 1: Toy Demo (2D Generation)
 
 This is a lightweight demonstration of the Flow Matching framework. It trains a model to generate a **2D quarter-arc shaped distribution** from Gaussian noise.
 
@@ -49,7 +49,7 @@ This is a lightweight demonstration of the Flow Matching framework. It trains a 
 
 -----
 
-## Task 2: Spatiotemporal Turbulence Generation
+## 🌊 Task 2: Spatiotemporal Turbulence Generation
 
 This task generates spatiotemporal turbulence fields. The architecture consists of three main components:
 
