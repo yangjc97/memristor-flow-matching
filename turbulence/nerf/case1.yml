@@ -1,0 +1,35 @@
+data_path: ../field_data/dataset.npy
+load_data_fn: load_elbow_flow
+
+save_path: work
+coor_path: ../field_data/coords.npy
+lumped_latent: True
+
+normalizer:
+  method: '-11'
+  dim: 0
+batch_size: 6048
+test_batch_size: 256
+
+multiGPU: 1
+readin_data_shape: "t N c"
+batch_shape: "t N c"
+
+hidden_size: 16
+epochs: 10001
+
+loss_fn: MSELoss
+test_criteria: rMAE
+save_every: 1000
+
+dims: 2
+
+NF:
+  name: SIRENAutodecoder_film
+  num_hidden_layers: 1
+  out_features: 3
+  hidden_features: 24
+
+lr:
+  nf: 1.e-2
+  latents: 1.e-2
