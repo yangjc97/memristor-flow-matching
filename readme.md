@@ -51,10 +51,12 @@ This is a lightweight demonstration of the Flow Matching framework. It trains a 
 
 ## 🌊 Task 2: Spatiotemporal Turbulence Generation
 
-This task generates complex spatiotemporal turbulence fields. The architecture consists of three main components:
+This task generates spatiotemporal turbulence fields. The architecture consists of three main components:
 
-1.  **Field Data:** Raw turbulence data storage.
+1.  **Field Data:** Turbulence data storage.
 2.  **NeRF (Encoder/Decoder):** Handles the encoding of field data and the **Conditional Neural Field (CNF)** decoding.
+    * [cite_start]**Acknowledgement:** This module is developed based on the work: *Conditional neural field latent diffusion model for generating spatiotemporal turbulence* (Nature Communications 15, 10416, 2024) [cite: 1150] and its official repository [CoNFiLD](https://github.com/jx-wang-s-group/CoNFiLD).
+    * Special thanks to the original authors (P. Du, M. H. Parikh, X. Fan, X.-Y. Liu, J.-X. Wang) for their generous sharing. If you need to use this specific module, please refer to the original version of the code and literature.
 3.  **Flow-Matching:** The Latent Flow Matching model that generates latent features.
 
 ### 🚀 Inference
